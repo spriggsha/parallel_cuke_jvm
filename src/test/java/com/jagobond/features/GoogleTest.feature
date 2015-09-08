@@ -1,12 +1,12 @@
 @google
-Feature: FastFT in Origami
-  As a user of the FastFT page
-  I want an experience to match the existing FastFT functionality
-  So that I can prove the utility of Origami
+Feature: Google Search Elements
+  As a user of the Google search page
+  I want to be certain every search element is displayed
+  So that I can be certain that basic search functionality is possible
 
 
   @smoke
-  Scenario Outline: - The FastFT index page passes a basic set of smoke tests when it runs
+  Scenario Outline: - The Google search page elements are displayed
 
     Given I am using a <typeOfBrowser> browser
     When I open a browser window of size <width> by <height>
@@ -15,24 +15,24 @@ Feature: FastFT in Origami
 
   @chrome
   Examples:
-    | typeOfBrowser           | width | height |
-    | chrome_latest           | 500   | 800    |
-    | chrome_latest           | 640   | 800    |
-    | chrome_latest           | 1024  | 800    |
-    | chrome_latest           | 1600  | 800    |
-    | chrome_latest_minus_one | 500   | 800    |
-    | chrome_latest_minus_one | 640   | 800    |
-    | chrome_latest_minus_one | 1024  | 800    |
-    | chrome_latest_minus_one | 1600  | 800    |
+    | typeOfBrowser | width | height |
+    | chrome        | 500   | 800    |
+    | chrome        | 640   | 800    |
+    | chrome        | 1024  | 800    |
+    | chrome        | 1600  | 800    |
 
   @firefox
   Examples:
-    | typeOfBrowser            | width | height |
-    | firefox_latest           | 500   | 800    |
-    | firefox_latest           | 640   | 800    |
-    | firefox_latest           | 1024  | 800    |
-    | firefox_latest           | 1600  | 800    |
-    | firefox_latest_minus_one | 500   | 800    |
-    | firefox_latest_minus_one | 640   | 800    |
-    | firefox_latest_minus_one | 1024  | 800    |
-    | firefox_latest_minus_one | 1600  | 800    |
+    | typeOfBrowser | width | height |
+    | firefox       | 500   | 800    |
+    | firefox       | 640   | 800    |
+    | firefox       | 1024  | 800    |
+    | firefox       | 1600  | 800    |
+
+  @ie11
+  Examples:
+    | typeOfBrowser | width | height |
+    | ie11          | 500   | 800    |
+    | ie11          | 640   | 800    |
+    | ie11          | 1024  | 800    |
+    | ie11          | 1600  | 800    |

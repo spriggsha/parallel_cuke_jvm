@@ -29,7 +29,7 @@ public class GoogleStepDefs {
     ////////////// WHEN STATEMENTS //////////////////
 
     @When("^I navigate to a Google search page$")
-    public void I_navigate_to_a_fastFT_index_page() throws Throwable {
+    public void I_navigate_to_a_google_search_page() throws Throwable {
         driver.get("http://www.google.com");
         googlePage = new GooglePage(driver,browser);
     }
